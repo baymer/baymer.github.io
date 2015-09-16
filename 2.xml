@@ -1,11 +1,11 @@
 <tile>
   <visual lang="en-US" version="2">
-    <binding template="TileSquare150x150PeekImageAndText04" branding="name"  fallback="TileSquarePeekImageAndText04">
+    <binding template="TileSquare150x150PeekImageAndText04" branding="logo"  fallback="TileSquarePeekImageAndText04">
       <image id="1" src="http://placehold.it/150x150" alt="alt text"/>
       <text id="1">Дело Савченко рассмотрит коллегия из трех судей</text>
     </binding>
 
-    <binding template="TileWide310x150ImageCollection" branding="name" fallback="TileWideImageCollection">
+    <binding template="TileWide310x150ImageCollection" branding="logo" fallback="TileWideImageCollection">
         <image id="1" src="http://placehold.it/160x150" alt="larger image"/>
         <image id="2" src="http://placehold.it/75x75" alt="small image, row 1, column 1"/>
         <image id="3" src="http://placehold.it/75x75" alt="small image, row 1, column 2"/>
@@ -14,7 +14,7 @@
 
     </binding>
 
-    <binding template="TileSquare310x310SmallImagesAndTextList02" branding="name">
+    <binding template="TileSquare310x310SmallImagesAndTextList02" branding="logo">
       <image id="1" src="https://avatars.mds.yandex.net/get-ynews/51756/b252484b17ae51214f4d1f2d2fb97f52/66x66"/>
       <image id="2" src="https://avatars.mds.yandex.net/get-ynews/34368/49904b27946d5633d2bf00aba9609e18/66x66"/>·
       <image id="3" src="https://avatars.mds.yandex.net/get-ynews/34368/70144a3c814e2dc0a0de9c74562e60ae/66x66"/>
