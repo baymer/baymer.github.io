@@ -1,15 +1,16 @@
 <tile>
   <visual lang="en-US" version="2">
 
+    <binding lang="fr-FR" template="TileSquare150x150PeekImageAndText04" branding="logo"  fallback="TileSquarePeekImageAndText04">
+      <image id="1" src="http://placehold.it/150x150" alt="alt text"/>
+      <text id="1">2 Дело Савченко рассмотрит коллегия из трех судей</text>
+    </binding>
+
     <binding template="TileSquare150x150PeekImageAndText04" branding="logo"  fallback="TileSquarePeekImageAndText04">
       <image id="1" src="http://placehold.it/150x150" alt="alt text"/>
       <text id="1">1 Дело Савченко рассмотрит коллегия из трех судей</text>
     </binding>
 
-    <binding lang="fr-FR" template="TileSquare150x150PeekImageAndText04" branding="logo"  fallback="TileSquarePeekImageAndText04">
-      <image id="1" src="http://placehold.it/150x150" alt="alt text"/>
-      <text id="1">2 Дело Савченко рассмотрит коллегия из трех судей</text>
-    </binding>
 
     <binding lang="en-US" template="TileSquare150x150PeekImageAndText04" branding="logo"  fallback="TileSquarePeekImageAndText04">
       <image id="1" src="http://placehold.it/150x150" alt="alt text"/>
