@@ -6,11 +6,11 @@
     </binding>
 
     <binding template="TileWide310x150PeekImageCollection02" fallback="TileWidePeekImageCollection02">
-      <image id="1" src="https://avatars.mds.yandex.net/get-ynews/30330/ea268e0ba66f646f8d851e8d8fb03908/380x214" alt="larger image"/>
-      <image id="2" src="https://avatars.mds.yandex.net/get-ynews/34368/1bdcda2a247a190251923ebaa10acb4c/66x66" alt="small image, row 1, column 1"/>
-      <image id="3" src="https://avatars.mds.yandex.net/get-ynews/34187/09cc8fc1e07ab409548c04b823b6f7a4/66x66" alt="small image, row 1, column 2"/>
-      <image id="4" src="https://avatars.mds.yandex.net/get-ynews/28337/f930cb6f8b86df4650489e8240e2b6d4/66x66" alt="small image, row 2, column 1"/>
-      <image id="5" src="https://avatars.mds.yandex.net/get-ynews/36841/aa5d6764e18423383563504542783f42/66x66" alt="small image, row 2, column 2"/>
+      <image id="1" src="http://avatars.mds.yandex.net/get-ynews/30330/ea268e0ba66f646f8d851e8d8fb03908/380x214" alt="larger image"/>
+      <image id="2" src="http://avatars.mds.yandex.net/get-ynews/34368/1bdcda2a247a190251923ebaa10acb4c/380x214" alt="small image, row 1, column 1"/>
+      <image id="3" src="http://avatars.mds.yandex.net/get-ynews/34187/09cc8fc1e07ab409548c04b823b6f7a4/380x214" alt="small image, row 1, column 2"/>
+      <image id="4" src="http://avatars.mds.yandex.net/get-ynews/28337/f930cb6f8b86df4650489e8240e2b6d4/380x214" alt="small image, row 2, column 1"/>
+      <image id="5" src="http://avatars.mds.yandex.net/get-ynews/36841/aa5d6764e18423383563504542783f42/380x214" alt="small image, row 2, column 2"/>
       <text id="1">Депутаты ЛДПР намерены вернуться в зал заседаний Госдумы</text>
       <text id="2">МВД Таджикистана: спецоперация по ликвидации банды Назарзоды завершена</text>
       <text id="3">Bloomberg: Россия каждый месяц перечисляет «ДНР» 2,5 миллиарда рублей</text>
