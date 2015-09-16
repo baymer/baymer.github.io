@@ -6,6 +6,12 @@
       <text id="1">Дело Савченко рассмотрит коллегия из трех судей</text>
     </binding>
 
+    <binding template="TileWide310x150SmallImageAndText04" fallback="TileWideSmallImageAndText04">
+      <image id="1" src="http://avatars.mds.yandex.net/get-ynews/30330/ea268e0ba66f646f8d851e8d8fb03908/380x214" alt="alt text"/>
+      <text id="1">Депутаты ЛДПР намерены вернуться в зал заседаний Госдумы</text>
+      <text id="2">Пять городов вошли в итоговый список кандидатов на проведение Игр-2024</text>
+    </binding> 
+
     <binding template="TileWide310x150PeekImageCollection02" branding="none">
       <image id="1" src="http://avatars.mds.yandex.net/get-ynews/30330/ea268e0ba66f646f8d851e8d8fb03908/380x214" alt="larger image"/>
       <image id="2" src="http://avatars.mds.yandex.net/get-ynews/34368/1bdcda2a247a190251923ebaa10acb4c/66x66" alt="small image, row 1, column 1"/>
