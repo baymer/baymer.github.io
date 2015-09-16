@@ -1,17 +1,17 @@
 <tile>
   <visual lang="en-US" version="2">
-    <binding template="TileSquare150x150PeekImageAndText03" branding="name"  fallback="TileSquarePeekImageAndText03">
+    <binding template="TileSquare150x150PeekImageAndText04" branding="name"  fallback="TileSquarePeekImageAndText04">
       <image id="1" src="http://placehold.it/150x150" alt="alt text"/>
-      <text id="1">First image</text>
-      <text id="2">Second image</text>
-      <text id="3">Therd image</text>
-      <text id="4">Forth image</text>
-      <text id="5">Fifth image</text>
+      <text id="1">Дело Савченко рассмотрит коллегия из трех судей</text>
     </binding>
 
-    <binding template="TileWide310x150ImageAndText01" branding="name">
-      <image id="1" src="http://placehold.it/310x100"/>
-      <text id="1">First image</text>
+    <binding template="TileWide310x150ImageCollection" branding="name" fallback="TileWideImageCollection">
+        <image id="1" src="http://placehold.it/160x150" alt="larger image"/>
+        <image id="2" src="http://placehold.it/75x75" alt="small image, row 1, column 1"/>
+        <image id="3" src="http://placehold.it/75x75" alt="small image, row 1, column 2"/>
+        <image id="4" src="http://placehold.it/75x75" alt="small image, row 2, column 1"/>
+        <image id="5" src="http://placehold.it/75x75" alt="small image, row 2, column 2"/>
+
     </binding>
 
     <binding template="TileSquare310x310SmallImagesAndTextList02" branding="name">
