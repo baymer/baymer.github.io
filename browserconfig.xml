@@ -6,7 +6,7 @@
             <square150x150logo src="http://placehold.it/150x150"/>
             <wide310x150logo src="http://placehold.it/310x150"/>
             <square310x310logo src="http://placehold.it/310x310"/>
-            <TileColor>#999999</TileColor>
+            <TileColor>#fff</TileColor>
         </tile>
         <notification>
             <polling-uri  src="2.xml"/>
