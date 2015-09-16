@@ -19,7 +19,7 @@
       <text id="5">Песков: премьер Израиля посетит РФ 21 сентября, встретится с Путиным</text>
     </binding>
 
-    <binding template="TileSquare310x310SmallImagesAndTextList02" branding="logo">
+    <binding template="TileSquare310x310SmallImagesAndTextList02" branding="name">
       <image id="1" src="https://avatars.mds.yandex.net/get-ynews/51756/b252484b17ae51214f4d1f2d2fb97f52/66x66"/>
       <image id="2" src="https://avatars.mds.yandex.net/get-ynews/34368/49904b27946d5633d2bf00aba9609e18/66x66"/>·
       <image id="3" src="https://avatars.mds.yandex.net/get-ynews/34368/70144a3c814e2dc0a0de9c74562e60ae/66x66"/>
