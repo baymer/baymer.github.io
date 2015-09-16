@@ -14,7 +14,7 @@
         </badge>
         <notification>
             <!-- <polling&#45;uri  src="1.xml"/> -->
-            <polling-uri2 src="2.xml"/>
+            <polling-uri src="2.xml"/>
             <!-- <polling&#45;uri3 src="3.xml"/> -->
             <!-- <polling&#45;uri4 src="4.xml"/> -->
             <!-- <polling&#45;uri5 src="5.xml"/> -->
