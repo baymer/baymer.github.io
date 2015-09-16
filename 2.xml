@@ -1,21 +1,28 @@
 <tile>
   <visual lang="en-US" version="2">
 
+    <binding lang="ru-RU" template="TileSquare150x150PeekImageAndText04" branding="none"  fallback="TileSquarePeekImageAndText04">
+      <image id="1" src="https://avatars.mds.yandex.net/get-ynews/28657/f6145fd30544aa00d6070effa19c6798/380x214" alt="alt text"/>
+      <text id="1">Главный тренер ФК «Кубань» отправлен в отставку</text>
+    </binding>
+
     <binding template="TileSquare150x150PeekImageAndText04" branding="none"  fallback="TileSquarePeekImageAndText04">
       <image id="1" src="http://avatars.mds.yandex.net/get-ynews/30330/ea268e0ba66f646f8d851e8d8fb03908/380x214" alt="alt text"/>
       <text id="1">Депутаты ЛДПР намерены вернуться в зал заседаний Госдумы</text>
     </binding>
 
-    <binding lang="ru-RU" template="TileSquare150x150PeekImageAndText04" branding="none"  fallback="TileSquarePeekImageAndText04">
+    <binding lang="ru-RU" template="TileWide310x150SmallImageAndText04"  branding="none" fallback="TileWideSmallImageAndText04">
       <image id="1" src="https://avatars.mds.yandex.net/get-ynews/28657/f6145fd30544aa00d6070effa19c6798/380x214" alt="alt text"/>
       <text id="1">Главный тренер ФК «Кубань» отправлен в отставку</text>
-    </binding>
+      <text id="2">Пять городов вошли в итоговый список кандидатов на проведение Игр-2024</text>
+    </binding> 
 
     <binding template="TileWide310x150SmallImageAndText04"  branding="none" fallback="TileWideSmallImageAndText04">
       <image id="1" src="http://avatars.mds.yandex.net/get-ynews/30330/ea268e0ba66f646f8d851e8d8fb03908/380x214" alt="alt text"/>
       <text id="1">Депутаты ЛДПР намерены вернуться в зал заседаний Госдумы</text>
       <text id="2">Пять городов вошли в итоговый список кандидатов на проведение Игр-2024</text>
     </binding> 
+
 
     <binding template="TileWide310x150PeekImageCollection02" lang="ru-RU" branding="none">
       <image id="1" src="http://avatars.mds.yandex.net/get-ynews/30330/ea268e0ba66f646f8d851e8d8fb03908/380x214" alt="larger image"/>
