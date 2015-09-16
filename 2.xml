@@ -2,8 +2,8 @@
   <visual lang="en-US" version="2">
 
     <binding template="TileSquare150x150PeekImageAndText04" branding="logo"  fallback="TileSquarePeekImageAndText04">
-      <image id="1" src="http://placehold.it/150x150" alt="alt text"/>
-      <text id="1">Дело Савченко рассмотрит коллегия из трех судей</text>
+      <image id="1" src="http://avatars.mds.yandex.net/get-ynews/30330/ea268e0ba66f646f8d851e8d8fb03908/380x214" alt="alt text"/>
+      <text id="1">Депутаты ЛДПР намерены вернуться в зал заседаний Госдумы</text>
     </binding>
 
     <binding template="TileWide310x150SmallImageAndText04" fallback="TileWideSmallImageAndText04">
