@@ -5,7 +5,7 @@
       <text id="1">Дело Савченко рассмотрит коллегия из трех судей</text>
     </binding>
 
-    <binding template="TileWide310x150ImageCollection" fallback="TileWideImageCollection">
+    <binding template="TileWide310x150ImageCollection" branding="none" fallback="TileWideImageCollection">
         <image id="1" src="http://placehold.it/160x150" alt="larger image"/>
         <image id="2" src="http://placehold.it/75x75" alt="small image, row 1, column 1"/>
         <image id="3" src="http://placehold.it/75x75" alt="small image, row 1, column 2"/>
