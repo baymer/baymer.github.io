@@ -2,18 +2,10 @@
 body {
   height: 10000px;
   overflow-y: hidden;
-  background: repeating-linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2) 10px,
-    rgba(0, 0, 0, 0.3) 10px,
-    rgba(0, 0, 0, 0.3) 20px
-  ),
-  url(http://s3-us-west-2.amazonaws.com/s.cdpn.io/3/old_map_@2X.png)
 }
 </style>
 <script>
-setInterval(() => window.scrollBy(0, Math.random() * 100), 1000)
+setInterval(() => window.scrollBy(0, Math.random()), 500)
 </script>
 <h1>Scroll testing</h1>
 <p>Try in desktop mode - you won't see the scrollbar. Try in mobile simulation - you will see the scrollbar</p>
