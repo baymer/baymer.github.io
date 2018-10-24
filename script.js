@@ -1,7 +1,2 @@
-try {
-    test = document.write('helo')
-    console.log('ok', test)
-} catch(e) {
-    debugger;
-    console.log(e);
-}
+document.write('<div id=asynctest>helo</div>')
+console.log('asynctest', document.getElementById('asynctest'))
