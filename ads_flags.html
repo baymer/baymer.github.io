@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flags generator</title>
+</head>
+
+<body>
+  <style>
+    #input {
+      width: 600px;
+      height: 300px;
+      margin: auto;
+    }
+    #output {
+      font-size: 10px;
+    }
+    #errors {
+      color: red;
+    }
+  </style>
+  <textarea id='input'></textarea><br>
+  <pre id='output'></pre>
+  <p id='errors'></p>
+  <pre id='info'>
+INFO:
+  services = nerpa, turbo
+  projects = news, mirror, sport
+  platforms = desktop, phone
+  pages =
+    news: main, rubric, story, notFound, openRubric
+    mirror: main, pinned, not_found
+    sport: main, rubric, calendar, event, pinned, notFound, story
+  banners = main, top, more, first, recomends, banger
+  </pre>
+  <script>
+    const input = document.getElementById('input');
+    const output = document.getElementById('output');
+    const errors = document.getElementById('errors');
+
+
+    const defaultValue = `turbo news desktop
+Прод / Контроль / Эксперимент / Эксперимент 2
+story:
+main = R-I-93511-58 / R-I-93511-2129 / R-I-93511-2130 / R-I-93511-2131
+alt = R-I-93511-104 / R-I-93511-2132 / R-I-93511-2133 / R-I-93511-2134
+first = N-I-93511-1704 / N-I-93511-2135 / N-I-93511-2136 / N-I-93511-2137
+more = N-I-93511-1708 / N-I-93511-2138 / N-I-93511-2139 / N-I-93511-2140
+footer = N-I-93511-1710 / N-I-93511-2141 / N-I-93511-2142 / N-I-93511-2143
+main:
+main = R-I-93511-207 / R-I-93511-2144 / R-I-93511-2145 / R-I-93511-2146
+alt = R-I-93511-208 / R-I-93511-2147 / R-I-93511-2148 / R-I-93511-2149
+first = N-I-93511-1896 / N-I-93511-2150 / N-I-93511-2151 / N-I-93511-2152
+footer = N-I-93511-1901 / N-I-93511-2153 / N-I-93511-2154 / N-I-93511-2155
+rubric:
+main = R-I-93511-105 / R-I-93511-2156 / R-I-93511-2157 / R-I-93511-2158
+alt = R-I-93511-103 / R-I-93511-2159 / R-I-93511-2160 / R-I-93511-2161 
+top = N-I-93511-1905 / N-I-93511-2162 / N-I-93511-2163 / N-I-93511-2164
+more = N-I-93511-1697 / N-I-93511-2165 / N-I-93511-2166 / N-I-93511-2167
+footer = N-I-93511-1700 / N-I-93511-2168 / N-I-93511-2169 / N-I-93511-2170`;
+
+    input.value = defaultValue;
+    getFlags({ target: { value: defaultValue } } );
+
+    input.addEventListener('input', getFlags);
+    input.addEventListener('change', getFlags);
+
+    function getFlags(e) {
+      const blocks = e.target.value.split('\n');
+      let platform;
+      let service;
+      let project;
+      let prefix;
+      let page;
+      let exps;
+      let flag;
+
+      const flags = {};
+
+      try {
+        for (const line of blocks) {
+          if (/turbo|nerpa/.test(line)) {
+            [, service, project, platform] = line.match(/^(nerpa|turbo)(?: (news|mirror|sport))? (desktop|phone)$/);
+
+            prefix = service === 'nerpa'
+              ? `yxnews_nerpa_${platform}`
+              : `yxnerpa_${project}_${platform}`;
+          } else if (/^Прод/.test(line)) {
+            exps = line.split(/ \/ /).slice(1);
+            for (const exp of exps) {
+              flags[exp] = {};
+            }
+          } else if (/^\w+:$/.test(line)) {
+            page = line.replace(':', '');
+            flag = `${prefix}_${page}_adv-cfg`;
+            for (let i = 0; i < exps.length; i++) {
+              flags[exps[i]][flag] = '';
+            }
+          } else {
+            const [bannerName, banners] = line.split(' = ');
+            const bannerIds = banners.split(' / ').slice(1);
+
+            for (let i = 0; i < exps.length; i++) {
+              const exp = flags[exps[i]];
+              const key = `${bannerName}:${bannerIds[i]}`;
+
+              exp[flag] += (exp[flag] && ',') + key;
+            }
+          }
+        }
+        const res = {};
+        for (let exp of exps) {
+          res[exp] = Object.keys(flags[exp]).map(key => `${key}=${flags[exp][key]}`);
+        }
+
+        output.innerText = JSON.stringify(res, null, 2);
+        errors.innerText = '';
+      } catch(e) {
+        errors.innerText = e.message;
+      }
+    }
+
+
+  </script>
+</body>
+</html>
